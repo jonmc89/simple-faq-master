@@ -1,4 +1,4 @@
-/* Global Styles */
+/* || Global Styles */
 
 * {
     margin: 0;
@@ -19,24 +19,114 @@ body {
 }
 
 @font-face {
-    font-family: "Inter Regular";
+    font-family: "Inter";
     src: url(./fonts/inter-v20-latin-regular.woff2) format("woff2");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Inter Bold";
+    font-family: "Inter";
     src: url(./fonts/inter-v20-latin-600.woff2) format("woff2");
     font-weight: 600;
+}
+
+/* || Main Styles */
+
+body {
+    color: var(--black);
+}
+
+/* Typography */
+
+h1,
+h2 {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.header-text,
+.section-brief,
+li,
+a,
+.section-close,
+.author-info {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1,
+.header-text {
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    background-color: var(--white);
+    max-width: 46rem;
+    padding: 2.5rem 0;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-block-end: 1.2rem;
+}
+
+/* Main */
+
+main {
+    background-color: var(--light-grey);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.track-order-section,
+.return-policy-section {
+    padding: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.track-order-container,
+.return-policy-container {
+    max-width: 40rem;
+}
+
+h2 {
+    margin-block-end: 1.2rem;
+}
+
+.section-brief {
+    margin-block-end: 1.5rem;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block-end: 1.5rem;
+}
+
+li {
+    line-height: 130%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
 }
 
 /* Author Info*/
 
 .author-info {
-    font-size: 14px;
     text-align: center;
-    margin-top: 16px;
     color: rgb(55, 65, 81);
+    margin-block-start: 2.5rem;
 }
 
 .author-info a {
