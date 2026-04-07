@@ -1,0 +1,44 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --blue: #4e80ee;
+    --black: #030616;
+    --grey: #d2d5da;
+    --light-grey: #f8fafc;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url(./fonts/inter-v20-latin-regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url(./fonts/inter-v20-latin-600.woff2) format("woff2");
+    font-weight: 600;
+}
+
+/* Author Info*/
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
